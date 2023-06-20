@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ejercicio2P</string>
+    <string name="bienvenida">Bienvenido al Capturador de Información Identificable Personal</string>
+    <string name="txtTempNombre">Nombre:</string>
+    <string name="txtHintNombre">Ingresa tu nombre</string>
+    <string name="txtTempApellido">Apellido:</string>
+    <string name="txtHintApellido">Ingresa tu apellido</string>
+    <string name="txtTempCorreo">Correo:</string>
+    <string name="txtHintCorreo">Ingresa tu correo</string>
+    <string name="txtBtnCapturar">Capturar Datos</string>
+</resources>
