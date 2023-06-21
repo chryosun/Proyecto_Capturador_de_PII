@@ -13,8 +13,9 @@
         android:theme="@style/Theme.Ejercicio2P"
         tools:targetApi="31">
         <activity
-            android:name=".resultadoActivity"
-            android:exported="false" />
+            android:name=".ResultadoActivity"
+            android:exported="false" >
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

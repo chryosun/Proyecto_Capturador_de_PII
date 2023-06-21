@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun show_data(valor_name: String, valor_apellido: String, valor_correo: String){
-        val navegacion = Intent(this,resultadoActivity::class.java)
-        navegacion.putExtra("name", valor_name)
+        val navegacion = Intent(this,ResultadoActivity::class.java)
+        navegacion.putExtra("nombre", valor_name)
         navegacion.putExtra("apellido", valor_apellido)
         navegacion.putExtra("correo", valor_correo)
         startActivity(navegacion)
