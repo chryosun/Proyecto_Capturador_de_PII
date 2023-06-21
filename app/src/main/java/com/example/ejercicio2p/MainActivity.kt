@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val apellido = findViewById<EditText>(R.id.txtApellido)
         val correo = findViewById<EditText>(R.id.txtCorreo)
         send_button = findViewById<Button>(R.id.btnCapturar)
+        val btnMiembros = findViewById<Button>(R.id.btnMiembros)
 
         send_button.setOnClickListener{
             val name_catch = nombre.text.toString().trim()
@@ -29,6 +30,11 @@ class MainActivity : AppCompatActivity() {
             }else{
                 show_data(name_catch,apellido_catch,correo_catch)
             }
+        }
+
+        btnMiembros.setOnClickListener{
+            val intent : Intent = Intent(this, participantes::class.java)
+            startActivity(intent)
         }
     }
     private fun show_data(valor_name: String, valor_apellido: String, valor_correo: String){
@@ -42,4 +48,6 @@ class MainActivity : AppCompatActivity() {
     private fun mostrar_snack_bar(mensaje:String){
         Snackbar.make(send_button,mensaje,Snackbar.LENGTH_SHORT).show()
     }
+
+
 }
